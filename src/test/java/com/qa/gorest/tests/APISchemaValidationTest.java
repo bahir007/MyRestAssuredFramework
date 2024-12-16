@@ -27,7 +27,7 @@ public class APISchemaValidationTest extends BaseTest{
 					.and()
 						.assertThat()
 							.body(matchesJsonSchemaInClasspath("getuserschema.json")); // get converted schema from response json online using one of converter source 
-					//== also classpath means the src/test/resources folder and data folder contains the schema json file
+					//== also classpath means the src/test/resources folder and data folder contains the schema json 
 
 }
 
