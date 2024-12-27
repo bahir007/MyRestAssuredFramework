@@ -41,7 +41,7 @@ pipeline
 			
 			steps{
 				script{
-					def exitCode = sh(script: "docker run --name apitesting${BUILD_NUMBER} -e MAVEN_OPTS='-Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regression.xml' bahir007/apitestautomation:latest", returnStatus)
+					def exitCode = sh(script: "docker run --name apitesting${BUILD_NUMBER} -e MAVEN_OPTS='-Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regression.xml' bahir007/apitestautomation3:latest", returnStatus: true)
 						if (exitCode !=0){
 							
 							currentBuild.result = 'FAILURE' //Mark the build as failed if tests fail
