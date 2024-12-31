@@ -41,10 +41,10 @@ public class GetUserTest extends BaseTest {
 	public void getUserTest() {
 		
 		
-		restClient.get(GOREST_ENDPOINT+"/7601181",true, true)
+		restClient.get(GOREST_ENDPOINT+"/7609143",true, true)
 			.then().log().all()
 				.assertThat().statusCode(APIHttpStatus.OK_200.getCode())
-					.and().body("id", equalTo(7601181));
+					.and().body("id", equalTo(7609143));
 		
 	}
 	
